@@ -3,30 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julie Oxgren - Inside-out Leadership Coaching</title>
-
-	<meta name="description" content="Julie Oxgren - Certificeret mastercoach specialiseret i inside-out leadership coaching. Personlig udvikling for 	autentiske ledere i Danmark.">
-	<meta name="keywords" content="leadership coaching, ledelses coaching, mastercoach, personlig udvikling, autentisk lederskab, coaching Danmark">
-	<meta name="author" content="Julie Oxgren">
-	<meta property="og:title" content="Julie Oxgren - Inside-out Leadership Coaching">
-	<meta property="og:description" content="Hjælper ledere med at opdage deres autentiske selv gennem inside-out leadership coaching og personlig 	udvikling.">
-	<meta property="og:type" content="website">
-
-	<script type="application/ld+json">
-{
-	  "@context": "https://schema.org",
-  	"@type": "ProfessionalService",
-  	"name": "Julie Oxgren Leadership Coaching",
-  	"description": "Inside-out leadership coaching og personlig udvikling",
-  	"provider": {
-  	  "@type": "Person",
-  	  "name": "Julie Oxgren"
-  },
-  "areaServed": "Danmark",
-  "serviceType": "Leadership Coaching"
-}
-</script>
-
+    <title>Julie Oxgren - Forretningsudvikling og Strategi til SMV-ledere</title>
+    
+    <!-- SEO meta-tags -->
+    <meta name="description" content="Julie Oxgren - Forretningsudvikling, strategi og projektledelse til SMV-ledere og selvstændige. Få klarhed, struktur og konkrete resultater.">
+    <meta name="keywords" content="forretningsudvikling, SMV rådgivning, strategi, projektledelse, ESG, selvstændig rådgiver, business coach Danmark">
+    <meta name="author" content="Julie Oxgren">
+    <meta property="og:title" content="Julie Oxgren - Forretningsudvikling til SMV-ledere">
+    <meta property="og:description" content="Hjælper SMV-ledere og selvstændige med forretningsudvikling, strategi og konkrete resultater.">
+    <meta property="og:type" content="website">
+    
     <style>
         * {
             margin: 0;
@@ -54,6 +40,7 @@
             align-items: center;
             position: relative;
             overflow: hidden;
+            padding: 80px 0;
         }
 
         .hero-content {
@@ -65,8 +52,7 @@
         }
 
         .hero-text {
-		z-index: 2;
-
+            z-index: 2;
         }
 
         .logo {
@@ -78,34 +64,39 @@
         }
 
         .logo-icon {
-    display: inline-block;
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
-    vertical-align: middle;
-}
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
 
         .hero h1 {
-            font-size: 5.5rem;
+            font-size: 3.5rem;
             font-weight: 300;
-            line-height: 1.1;
-            margin-bottom: 40px;
+            line-height: 1.2;
+            margin-bottom: 30px;
             color: #2c2c2c;
         }
 
+        .hero-subtext {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            color: #555;
+        }
+
         .cta-button {
-    display: block;
-    padding: 15px 30px;
-    border: 2px solid #333;
-    color: #333;
-    text-decoration: none;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    background: transparent;
-    width: fit-content;
-    margin-left: 25%;
-transform: translateX(-37.5%);
-}
+            display: inline-block;
+            padding: 18px 35px;
+            border: 2px solid #333;
+            color: #333;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            background: transparent;
+        }
 
         .cta-button:hover {
             background: #333;
@@ -123,37 +114,70 @@ transform: translateX(-37.5%);
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
         }
 
-        /* Who Am I Section */
+        /* About Section */
         .about {
             padding: 100px 0;
             background: #fff;
-            text-align: center;
         }
 
-     .about-icon {
-    display: block;
-    width: 120px;
-    height: 120px;
-    margin: 0 auto 30px;
-}
+        .about-icon {
+            display: block;
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 40px;
+        }
 
         .about h2 {
             font-size: 2.5rem;
             font-weight: 300;
             margin-bottom: 40px;
             color: #2c2c2c;
+            text-align: center;
         }
 
         .about-text {
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
-            font-size: 18px;
+            font-size: 1.05rem;
             line-height: 1.8;
             color: #555;
         }
 
         .about-text p {
             margin-bottom: 20px;
+        }
+
+        .credentials {
+            background: #f8f8f8;
+            padding: 30px;
+            border-radius: 8px;
+            margin-top: 40px;
+        }
+
+        .credentials h3 {
+            font-size: 1.3rem;
+            font-weight: 500;
+            margin-bottom: 20px;
+            color: #2c2c2c;
+        }
+
+        .credentials ul {
+            list-style: none;
+            color: #555;
+        }
+
+        .credentials li {
+            margin-bottom: 12px;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .credentials li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #333;
+            font-weight: bold;
         }
 
         /* Services Section */
@@ -166,14 +190,24 @@ transform: translateX(-37.5%);
             text-align: center;
             font-size: 2.5rem;
             font-weight: 300;
-            margin-bottom: 60px;
+            margin-bottom: 30px;
             color: #2c2c2c;
+        }
+
+        .services-intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 60px;
+            font-size: 1.1rem;
+            color: #555;
+            line-height: 1.8;
         }
 
         .services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
             gap: 30px;
+            margin-bottom: 50px;
         }
 
         .service-card {
@@ -181,7 +215,6 @@ transform: translateX(-37.5%);
             padding: 40px 30px;
             border-radius: 8px;
             box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            text-align: center;
             transition: transform 0.3s ease;
         }
 
@@ -189,80 +222,98 @@ transform: translateX(-37.5%);
             transform: translateY(-5px);
         }
 
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            background: #333;
-            border-radius: 50%;
-            margin: 0 auto 20px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 24px;
-        }
-
         .service-card h3 {
-            font-size: 1.3rem;
+            font-size: 1.4rem;
             font-weight: 600;
             margin-bottom: 15px;
-            color: #2c2c2c;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .service-card ul {
-            list-style: none;
-            text-align: left;
-            color: #666;
-            font-size: 14px;
-        }
-
-        .service-card li {
-            margin-bottom: 8px;
-            position: relative;
-            padding-left: 15px;
-        }
-
-        .service-card li::before {
-            content: "•";
-            position: absolute;
-            left: 0;
-            color: #333;
-        }
-
-        /* Quote Section */
-        .quote-section {
-            padding: 100px 0;
-            background: #fff;
-            text-align: center;
-        }
-
-        .quote-section h2 {
-            font-size: 2.2rem;
-            font-weight: 300;
-            max-width: 800px;
-            margin: 0 auto 60px;
             color: #2c2c2c;
             line-height: 1.3;
         }
 
-        .quote-image {
-            max-width: 100%;
-            height: 400px;
-            background: linear-gradient(45deg, #666 0%, #333 100%);
+        .service-card p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        .service-process {
+            text-align: center;
+            max-width: 800px;
+            margin: 50px auto 0;
+            padding: 30px;
+            background: #fff;
             border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #fff;
-            font-size: 18px;
+            font-size: 1.05rem;
+            color: #555;
+            line-height: 1.8;
+        }
+
+        /* Benefits Section */
+        .benefits {
+            padding: 100px 0;
+            background: #fff;
+        }
+
+        .benefits h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 60px;
+            color: #2c2c2c;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .benefit-item {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .benefit-item h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #2c2c2c;
+        }
+
+        .benefit-item p {
+            color: #666;
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            padding: 100px 0;
+            background: linear-gradient(135deg, #e8d5c4 0%, #d4c4b0 100%);
+            text-align: center;
+        }
+
+        .cta-section h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 30px;
+            color: #2c2c2c;
+        }
+
+        .cta-section p {
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #555;
         }
 
         /* Contact Section */
         .contact {
             padding: 100px 0;
-            background: linear-gradient(135deg, #e8d5c4 0%, #d4c4b0 100%);
+            background: #fff;
         }
 
         .contact-content {
@@ -270,25 +321,27 @@ transform: translateX(-37.5%);
             grid-template-columns: 300px 1fr;
             gap: 60px;
             align-items: center;
+            max-width: 900px;
+            margin: 0 auto;
         }
 
         .contact-image {
             width: 100%;
             height: 400px;
-            background: linear-gradient(45deg, #999 0%, #666 100%);
             border-radius: 8px;
+            object-fit: cover;
         }
 
         .contact-text h2 {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 300;
-            margin-bottom: 40px;
+            margin-bottom: 20px;
             color: #2c2c2c;
             line-height: 1.2;
         }
 
         .contact-info {
-            margin-top: 40px;
+            margin-top: 30px;
         }
 
         .contact-info h3 {
@@ -303,45 +356,66 @@ transform: translateX(-37.5%);
         .contact-info p {
             color: #555;
             font-size: 16px;
-            margin-bottom: 5px;
+            margin-bottom: 8px;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: underline;
         }
 
         /* Responsive */
-      @media (max-width: 768px) {
-    .hero-content,
-    .contact-content {
-        grid-template-columns: 1fr;
-        text-align: center;
-        gap: 30px;
-    }
+        @media (max-width: 768px) {
+            .hero-content,
+            .contact-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+                gap: 30px;
+            }
 
-    .hero h1 {
-        font-size: 3.2rem;
-        line-height: 1.2;
-        margin-bottom: 30px;
-    }
+            .hero h1 {
+                font-size: 2.5rem;
+                line-height: 1.2;
+                margin-bottom: 20px;
+            }
 
-    .cta-button {
-        margin-left: 0;
-        transform: none;
-        margin: 0 auto;
-    }
+            .hero-subtext {
+                font-size: 1rem;
+            }
 
-    .hero-image img {
-        max-width: 90%;
-    }
+            .cta-button {
+                display: block;
+                width: fit-content;
+                margin: 0 auto;
+            }
 
-    .services-grid {
-        grid-template-columns: 1fr;
-    }
+            .hero-image img {
+                max-width: 90%;
+            }
 
-    .about h2,
-    .services h2,
-    .quote-section h2,
-    .contact-text h2 {
-        font-size: 2rem;
-    }
-}
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .about h2,
+            .services h2,
+            .benefits h2,
+            .cta-section h2 {
+                font-size: 2rem;
+            }
+
+            .contact-content {
+                text-align: center;
+            }
+
+            .contact-image {
+                height: 300px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -351,14 +425,20 @@ transform: translateX(-37.5%);
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="logo">
-    <img src="Logo-taupe1.png" alt="Julie Oxgren Logo" class="logo-icon">
-    Certified Mastercoach Julie Oxgren
-</div>
-                    <h1>Inside-out leadership coaching</h1>
-                    <a href="#contact" class="cta-button">Let's talk - book a consultation</a>
+                        <img src="Logo-taupe.png" alt="Julie Oxgren Logo" class="logo-icon">
+                        Julie Oxgren
+                    </div>
+                    <h1>Forretningsudvikling og strategi til SMV-ledere og selvstændige</h1>
+                    <p class="hero-subtext">
+                        Er du selvstændig eller leder af en virksomhed? Drømmer du om at udvikle din virksomhed, men føler dig fastlåst i hverdagens opgaver? Eller har du ambitioner, men mangler den rigtige sparringspartner til at omsætte dem til handling?
+                    </p>
+                    <p class="hero-subtext">
+                        Jeg hjælper dig med at skabe klarhed, struktur og konkrete resultater – så din virksomhed udvikler sig i den retning, du ønsker.
+                    </p>
+                    <a href="#contact" class="cta-button">Book en gratis afklaringssamtale</a>
                 </div>
                 <div class="hero-image">
-                   <img src="Julie-hero.jpg" alt="Julie Oxgren" style="max-width: 100%; height: auto; border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.1);">
+                    <img src="Julie-Hero.jpg" alt="Julie Oxgren">
                 </div>
             </div>
         </div>
@@ -368,11 +448,24 @@ transform: translateX(-37.5%);
     <section class="about">
         <div class="container">
             <img src="Logo.png" alt="Julie Oxgren Logo" class="about-icon">
-<h2>Who am I</h2>
+            <h2>Jeg hedder Julie Oxgren – og jeg har gået vejen selv</h2>
             <div class="about-text">
-                <p>My passion lies in helping leaders discover their authentic selves and lead from a place of inner strength and clarity. I believe that 		true leadership starts from within. When you understand yourself deeply - your values, your patterns, and your unique gifts - you naturally 		become the kind of leader who inspires genuine trust and creates meaningful change.</p>
-		<p>As a certified mastercoach with a solid academic foundation, I've learned that the most powerful transformations happen when we balance 		professional expertise with personal growth.</p>
-		<p>Together, we'll explore not just how you lead, but who you are as a leader - creating sustainable success that feels aligned with your 		deepest values.</p>      
+                <p>Jeg har mere end 10 års erfaring med forretningsudvikling, projektledelse og strategisk rådgivning. Med en baggrund i økonomi (cand.merc. i Applied Economics and Finance) kombinerer jeg skarp forretningsforståelse med evnen til at hjælpe dig gennem de udfordringer, der ofte holder os tilbage.</p>
+                
+                <p>Jeg har selv valgt vejen som selvstændig. Jeg ved, hvordan det føles at stå med store ambitioner, mange idéer – og samtidig skulle finde ud af, hvilken vej der er den rigtige. Jeg ved, hvad det kræver at skulle træffe beslutninger alene, holde overblikket og skabe retning, når hverdagen presser på.</p>
+                
+                <p>Netop derfor er min tilgang både analytisk og empatisk. Jeg hjælper dig ikke kun med strategi og struktur – jeg hjælper dig med at omsætte idéer til handling, selvom du står alene med beslutningerne, mangler tid og skal jonglere både drift og udvikling. For udvikling handler lige så meget om mindset som metode.</p>
+                
+                <div class="credentials">
+                    <h3>Min baggrund:</h3>
+                    <ul>
+                        <li>Cand.merc. i Applied Economics and Finance</li>
+                        <li>Master Coach med speciale i ledelse og facilitering</li>
+                        <li>10 års erfaring med forretningsudvikling, analyse, strategi og projektledelse</li>
+                        <li>7 års erfaring som sparringspartner for ledere</li>
+                        <li>Erfaring med ESG, data, automatisering og driftsstyring</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </section>
@@ -380,62 +473,82 @@ transform: translateX(-37.5%);
     <!-- Services Section -->
     <section class="services">
         <div class="container">
-            <h2>What I Do</h2>
-          	<div class="services-grid">     
-     <div class="service-card">
-                    <div class="service-icon">📈</div>
-                    <h3>Developing<br>Leaders</h3>
-                    <ul>
-                        <li>Embark on a journey of self-discovery to understand your unique leadership gifts </li> 
-			<li>Learn to lead from the heart while maintaining professional boundaries </li>
-			<li>Develop inner confidence that naturally inspires and motivates others </li>
-                    </ul>
+            <h2>Sådan hjælper jeg dig</h2>
+            <p class="services-intro">
+                Som selvstændig eller SMV-leder står du ofte alene med de store beslutninger. Jeg bliver din sparringspartner – en der både forstår forretningen og sikrer, at dine planer ikke bare bliver gode intentioner, men konkrete resultater.
+            </p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Vil udvikle din forretning i en ny retning</h3>
+                    <p>Skal din virksomhed udvikle sig? Overvejer du nye markeder, produkter eller forretningsområder? Vil du arbejde med bæredygtighed? Jeg hjælper dig med at skabe en strategi og sikre den bliver implementeret – ikke bare endnu et dokument i skuffen.</p>
                 </div>
                 <div class="service-card">
-                    <div class="service-icon">🎯</div>
-                    <h3>1:1 Coaching</h3>
-                    <ul>
-                        <li>Explore your deepest aspirations and align your career with your true purpose</li>
-                        <li>Gain profound self-awareness to understand your patterns and potential</li>
-                        <li>Create space for reflection and growth in a supportive, non-judgmental environment</li>
-                        <li>Transform limiting beliefs into empowering perspectives that fuel your success</li>
-                    </ul>
+                    <h3>Har projekter der skal gennemføres</h3>
+                    <p>Er der projekter der er gået i stå, eller nye initiativer der skal kickstartes? Jeg hjælper dig med at få struktureret projektet, lave en realistisk plan og sikre fremdrift hele vejen til mål.</p>
                 </div>
-		    <div class="service-card">
-		    <div class="service-icon">📋</div>
-                    <h3>Sustainable leadership</h3>
-                    <ul>
-                        <li>Discover your authentic leadership style that aligns with your values</li>
-                        <li>Create meaningful connections within your team through genuine leadership</li>
- 			<li>Integrate your personal mission with sustainable business practices</li>
-                    </ul>
+                <div class="service-card">
+                    <h3>Føler dig fanget i driften</h3>
+                    <p>Har du ambitioner og idéer, men synes det er svært at komme i gang? Føler du dig fanget i den daglige brandslukning? Jeg hjælper dig med at skabe struktur, prioritere og frigive tid til det der virkelig udvikler din virksomhed.</p>
                 </div>
-           
+            </div>
+
+            <div class="service-process">
+                <p>Vi starter altid med en uforpligtende afklaringssamtale, hvor vi taler om dine udfordringer og mål. Derefter skræddersyer vi et forløb, der passer til dit behov – enten som løbende sparring, projektbaseret samarbejde, eller en kombination.</p>
             </div>
         </div>
     </section>
 
-    <!-- Quote Section -->
-    <section class="quote-section">
+    <!-- Benefits Section -->
+    <section class="benefits">
         <div class="container">
-            <h2>Success is what you define it to be - what is your definition?</h2>
-            <div class="quote-image">
-                <img src="Arkitektur.jpg" alt="Arkitektur" class="quote-image" style="width: 100%; height: 400px; object-fit: cover;">
+            <h2>Hvad får du ud af det?</h2>
+            <div class="benefits-grid">
+                <div class="benefit-item">
+                    <h3>Klarhed og en konkret plan</h3>
+                    <p>Du ved præcis, hvad du vil opnå og har en realistisk plan for at komme derhen. Ikke bare endnu en strategi i skuffen, men en køreplan du faktisk kan følge.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Konkrete resultater</h3>
+                    <p>Dine projekter og initiativer bliver gennemført. Du får hjælp til at fastholde fokus, prioritere og sikre fremdrift – også når hverdagen presser på.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>Mere tid og overskud</h3>
+                    <p>Du slipper for følelsen af konstant at være bagud. Med bedre struktur og klarere prioriteringer får du frigivet tid til at arbejde på din virksomhed i stedet for kun i den.</p>
+                </div>
+                <div class="benefit-item">
+                    <h3>En troværdig sparringspartner</h3>
+                    <p>Du står ikke længere alene med beslutningerne. Du får en objektiv sparringspartner der både udfordrer dig og bakker dig op – og som forstår både tallene og mennesket bag virksomheden.</p>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section" id="contact">
+        <div class="container">
+            <h2>Start med en uforpligtende samtale</h2>
+            <p>
+                Book en gratis afklaringssamtale på 30 minutter, hvor vi taler om din virksomhed, dine udfordringer og ambitioner.
+            </p>
+            <p>
+                Vi bruger samtalen til at finde ud af, om vi er et godt match – og om det giver mening for os at arbejde sammen. Ingen forpligtelser – vi tager en konkret snak om din situation og hvordan jeg kan hjælpe dig.
+            </p>
+            <a href="mailto:julieoxgren@gmail.com?subject=Anmodning om afklaringssamtale" class="cta-button">Book din afklaringssamtale her</a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section class="contact" id="contact">
+    <section class="contact">
         <div class="container">
             <div class="contact-content">
-               <img src="Julie-contact.jpg" alt="Julie Oxgren" class="contact-image" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px;">
+                <img src="Julie-contact.jpg" alt="Julie Oxgren" class="contact-image">
                 <div class="contact-text">
-                    <h2>Let's do this together.</h2>
+                    <h2>Lad os tage en snak</h2>
                     <div class="contact-info">
-                        <h3>CONTACT</h3>
-                        <p><a href="mailto:julieoxgren@gmail.com?subject=Leadership Coaching Inquiry" style="color: #0066cc; text-decoration: underline;">julieoxgren@gmail.com</a></p>
-                        <p><a href="tel:+4529914442" style="color: #0066cc; text-decoration: underline;">+45 29914442</a></p>
+                        <h3>KONTAKT</h3>
+                        <p><a href="mailto:julieoxgren@gmail.com?subject=Anmodning om afklaringssamtale">julieoxgren@gmail.com</a></p>
+                        <p><a href="tel:+4529914442">+45 29914442</a></p>
                     </div>
                 </div>
             </div>
