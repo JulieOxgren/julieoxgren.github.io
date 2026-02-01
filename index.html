@@ -53,7 +53,8 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-/* Navigation */
+
+        /* Navigation */
 .nav {
     background: rgba(255, 255, 255, 0.95);
     padding: 15px 0;
@@ -135,7 +136,7 @@
         }
 
         .hero h1 {
-            font-size: 2.5 rem;
+            font-size: 2.5rem;
             font-weight: 300;
             line-height: 1.2;
             margin-bottom: 30px;
@@ -431,7 +432,20 @@
             color: #0066cc;
             text-decoration: underline;
         }
+        .burger {
+            display: none;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
 
+        .burger span {
+            display: block;
+                width: 25px;
+                height: 3px;
+                background: #000;
+                margin: 5px 0;
+        }
       /* Responsive */
 @media (max-width: 768px) {
     .hero-content,
@@ -442,7 +456,7 @@
     }
 
     .hero h1 {
-        font-size: 1,5rem;
+        font-size: 1.5rem;
         line-height: 1.2;
         margin-bottom: 20px;
     }
@@ -483,6 +497,33 @@
     .contact-image {
         height: 300px;
     }
+/* Burger menu – mobil */
+
+.burger {
+    display: block;
+}
+
+.nav-content {
+    flex-wrap: wrap;
+}
+
+.nav-links {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.nav-links a {
+    padding: 12px 0;
+    font-size: 1rem;
+}
+
+/* Når burgeren er klikket */
+.nav-links.active {
+    display: flex;
+}
 }
     </style>
 </head>
@@ -492,6 +533,12 @@
     <div class="container">
         <div class="nav-content">
             <a href="#hero" class="nav-brand">Julie Oxgren</a>
+        <button class="burger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+        </button>
+            
             <div class="nav-links">
                 <a href="#hero">Hjem</a>
                 <a href="#about">Om mig</a>
@@ -615,7 +662,7 @@
                 Book en gratis afklaringssamtale på 30 minutter, hvor vi taler om din virksomhed, dine udfordringer og ambitioner.
                 En udforpligtende snak om din situation og hvordan jeg kan hjælpe.
             </p>       
-            <a href="mailto:julieoxgren@gmail.com?subject=Anmodning om afklaringssamtale" class="cta-button">Book din afklaringssamtale her</a
+            <a href="mailto:julieoxgren@gmail.com?subject=Anmodning om afklaringssamtale" class="cta-button"> Book din afklaringssamtale her</a
         </div>
     </section>
 
@@ -623,7 +670,8 @@
     <section class="contact">
         <div class="container">
             <div class="contact-content">
-                <img src="Julie-contact.jpg" alt="Julie Oxgren - Certificeret mastercoach og forretningsrådgiver" class="contact-image">                <div class="contact-text">
+                <img src="Julie-contact.jpg" alt="Julie Oxgren - Certificeret mastercoach og forretningsrådgiver" class="contact-image">               
+                <div class="contact-text">
                     <h2>Lad os tage en snak</h2>
                     <div class="contact-info">
                         <h3>KONTAKT</h3>
@@ -635,5 +683,20 @@
             </div>
         </div>
     </section>
+    <script>
+    const burger = document.querySelector('.burger');
+    const navLinks = document.querySelector('.nav-links');
+
+    burger.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+
+    // Luk menuen når man klikker på et link
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+        });
+    });
+</script>
 </body>
 </html>
