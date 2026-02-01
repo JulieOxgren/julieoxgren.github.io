@@ -63,9 +63,21 @@
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-brand {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+
 .nav-links {
     display: flex;
-    justify-content: center;
     gap: 30px;
     flex-wrap: wrap;
 }
@@ -82,8 +94,8 @@
 
 .nav-links a:hover {
     color: #666;
-}
-        /* Hero Section */
+} 
+/* Hero Section */
         .hero {
             background: linear-gradient(135deg, #e7dfd8 0%, #d4c4b0 100%);
             min-height: 100vh;
@@ -476,8 +488,10 @@
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="nav">
-        <div class="container">
+   <nav class="nav">
+    <div class="container">
+        <div class="nav-content">
+            <a href="#hero" class="nav-brand">Julie Oxgren</a>
             <div class="nav-links">
                 <a href="#hero">Hjem</a>
                 <a href="#about">Om mig</a>
@@ -486,15 +500,12 @@
                 <a href="#contact">Kontakt</a>
             </div>
         </div>
-    </nav> <!-- Hero Section -->
+    </div>
+</nav> <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
                 <div class="hero-text">
-                    <div class="logo">
-                        <img src="Logo-taupeNY.png" alt="Julie Oxgren Logo" class="logo-icon">
-                        Julie Oxgren - Forretningsudvikler og Erhvervscoach
-                    </div>
                     <h1> Jeg hjælper SMV-ejere og ledere med at skabe vækst, balance og frihed i deres forretning </h1>
                     <p class="hero-subtext">
                         Er du selvstændig eller leder af en virksomhed?
