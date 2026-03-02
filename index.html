@@ -52,6 +52,7 @@
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
+      
         }
 
         /* Navigation */
@@ -96,6 +97,21 @@
 .nav-links a:hover {
     color: #666;
 } 
+
+/* LOGO sektion - Sørger for at logoet har en god størrelse */
+.nav-brand img {
+    height: 45px; /* Juster denne værdi for at gøre logoet større/mindre */
+    width: auto;  /* Bevarer logoets proportioner */
+    display: block;
+}
+
+/* Sørger for at logoet er centreret vertikalt i baren */
+.nav-brand {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 5px 0;
+}
 /* Hero Section */
         .hero {
             background: linear-gradient(135deg, #e7dfd8 0%, #d4c4b0 100%);
@@ -532,7 +548,9 @@
    <nav class="nav">
     <div class="container">
         <div class="nav-content">
-            <a href="#hero" class="nav-brand">Julie Oxgren</a>
+           <a href="#hero" class="nav-brand">
+    <img src="LogoNavn.png" alt="Julie Oxgren" class="logo-img">
+</a>
         <button class="burger" aria-label="Menu">
                 <span></span>
                 <span></span>
