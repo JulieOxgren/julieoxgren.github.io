@@ -520,15 +520,24 @@
 }
 
 .nav-content {
-    flex-wrap: wrap;
+    flex-wrap: nowrap; /* Tvinger dem til at blive på samme linje */
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
 }
-
+.nav-brand img {
+    height: 45px; /* Dette sikrer, at der er plads til både logo og burger */
+    width: auto;
+}
 .nav-links {
     display: none;
     width: 100%;
+    position: absolute; /* Gør at den ikke "skubber" til logoet når den åbner */
+    top: 100%;
+    left: 0;
+    background: white;
     flex-direction: column;
-    text-align: center;
-    margin-top: 20px;
+    padding: 20px 0;
 }
 
 .nav-links a {
