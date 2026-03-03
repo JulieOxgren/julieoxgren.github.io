@@ -58,7 +58,7 @@
         /* Navigation */
 .nav {
     background: rgba(255, 255, 255, 0.95);
-    padding: 15px 0;
+    padding: 5px 0;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -72,10 +72,10 @@
 }
 
 .nav-brand {
-    font-size: 18px;
-    font-weight: 600;
-    color: #333;
+    display: flex;       /* Aktiverer flexbox */
+    align-items: center; /* Centrerer logoet vertikalt i bjælken */
     text-decoration: none;
+    /* Ingen 'justify-content: center' her - så bliver det til venstre */
 }
 
 .nav-links {
@@ -100,7 +100,7 @@
 
 /* LOGO sektion - Sørger for at logoet har en god størrelse */
 .nav-brand img {
-    height: 100px; /* Juster denne værdi for at gøre logoet større/mindre */
+    height: 150px; /* Juster denne værdi for at gøre logoet større/mindre */
     width: auto;  /* Bevarer logoets proportioner */
     display: block;
 }
