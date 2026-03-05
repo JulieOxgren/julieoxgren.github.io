@@ -49,14 +49,16 @@
         }
 
         .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;            /* Gør at logo-boks og menu står ved siden af hinanden */
-    justify-content: space-between; 
-    align-items: center;      /* Centrerer dem vertikalt */
-}
-
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+      
+        }
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    }
         /* Navigation */
 .nav {
     background: rgba(255, 255, 255, 0.95);
@@ -83,13 +85,7 @@
 .nav-links {
     display: flex;
     gap: 30px;
-    flex-wrap: nowrap;        /* Undgå at de hopper ned på desktop */
-    width: auto;              /* Vigtigt, så den ikke fylder hele linjen */
-}
-
-/* Skjul burgeren på desktop (vigtigt!) */
-.burger {
-    display: none;
+    flex-wrap: wrap;
 }
 
 .nav-links a {
@@ -472,6 +468,10 @@
         }
       /* Responsive */
 @media (max-width: 768px) {
+      .nav-container {
+        display: block; /* Dette "nulstiller" desktop-flexboxen på mobilen */
+    }
+    
     .hero-content,
     .contact-content {
         grid-template-columns: 1fr;
@@ -573,7 +573,7 @@
 <body>
     <!-- Navigation -->
   <nav class="nav">
-    <div class="container">
+   <div class="container nav-container">
         <div class="nav-content">
             <!-- Kun logo og burger herinde -->
             <a href="#hero" class="nav-brand">
