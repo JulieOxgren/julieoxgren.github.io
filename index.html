@@ -49,11 +49,13 @@
         }
 
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-      
-        }
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;            /* Gør at logo-boks og menu står ved siden af hinanden */
+    justify-content: space-between; 
+    align-items: center;      /* Centrerer dem vertikalt */
+}
 
         /* Navigation */
 .nav {
@@ -81,7 +83,13 @@
 .nav-links {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;        /* Undgå at de hopper ned på desktop */
+    width: auto;              /* Vigtigt, så den ikke fylder hele linjen */
+}
+
+/* Skjul burgeren på desktop (vigtigt!) */
+.burger {
+    display: none;
 }
 
 .nav-links a {
